@@ -55,7 +55,7 @@ const AddEducation = ({ addEducation, history }) => {
 		          	onChange={e => { 
 		          		setFormData({ ...formData, current: !current});
 		          		toggleDisabled(!toDateDisabled);
-		          	}}  /> {' '}Current Job</p>
+		          	}}  /> {' '}Current School</p>
 		        </div>
 		        <div class='form-group'>
 		          	<h4>To Date</h4>
@@ -71,7 +71,7 @@ const AddEducation = ({ addEducation, history }) => {
 		          	></textarea>
 		        </div>
 		        <input type='submit' class='btn btn-primary my-1' />
-		        <a class='btn btn-light my-1' href='dashboard.html'>Go Back</a>
+		        <Link class='btn btn-light my-1' to='/dashboard'>Go Back</Link>
       		</form>
 		</Fragment>
 	)
