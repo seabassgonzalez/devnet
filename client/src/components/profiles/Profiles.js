@@ -5,6 +5,9 @@ import Spinner from '../layout/Spinner';
 import { getProfiles } from '../../actions/profile';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
+	useEffect(() => {
+		getProfiles();
+	}, []);
 	return <div />;
 };
 
