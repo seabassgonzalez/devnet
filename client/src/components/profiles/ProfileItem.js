@@ -11,9 +11,18 @@ const ProfileItem = ({
 		skills
 	}
 }) => {
-	return <div>Test</div>;
+	return <div className='profile bg-light'>
+		<img src={avatar} alt='' className='round-img' />
+		<div>
+			<h2>{name}</h2>
+			<p>{status} {company && <span> at {company}</span>}</p>
+			<p className='my-1'>{location && <span>{location}</span>}</p>
+		</div>
+	</div>;
 };
 
-ProfileItem.propTypes = {};
+ProfileItem.propTypes = {
+	profile: PropTypes.object.isRequired
+};
 
 export default ProfileItem;
