@@ -11,18 +11,15 @@ const PostItem = ({ auth, post: { _id, text, name, avatar, user, likes, comments
             <a href="profile.html">
               <img
                 class="round-img"
-                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                src={avatar}
                 alt=""
               />
-              <h4>John Doe</h4>
+              <h4>{name}</h4>
             </a>
           </div>
           <div>
             <p class="my-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              possimus corporis sunt necessitatibus! Minus nesciunt soluta
-              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
-              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+              {text}
             </p>
              <p class="post-date">
                 Posted on 04/16/2019
