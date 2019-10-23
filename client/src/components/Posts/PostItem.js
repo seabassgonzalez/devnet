@@ -26,9 +26,9 @@ const PostItem = ({ auth, post: { _id, text, name, avatar, user, likes, comments
             </p>
             <button type='button' className='btn btn-light'>
               <i className='fas fa-thumbs-up'></i>{' '}
-              <span>{likes.length > 0 && (
+              <span>{likes.length > 0 &&
               		<span>{likes.length}</span>
-              	)}</span>
+              }</span>
             </button>
             <button type='button' className='btn btn-light'>
               <i className='fas fa-thumbs-down'></i>
