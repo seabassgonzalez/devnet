@@ -5,7 +5,16 @@ import Moment from 'react-moment';
 import { connect } from 'react-redux';
 import { addLike, removeLike } from '../../actions/post';
 
-const PostItem = ({ addLike, removeLike, auth, post: { _id, text, name, avatar, user, likes, comments, date }
+const PostItem = ({ addLike, removeLike, auth, post: { 
+	_id,
+	text,
+	name,
+	avatar,
+	user,
+	likes,
+	comments,
+	date
+}
 }) => (
 		<div className='post bg-white p-1 my-1'>
           <div>
