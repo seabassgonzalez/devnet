@@ -4,7 +4,9 @@ import {
 	UPDATE_LIKES,
 	DELETE_POST,
 	ADD_POST,
-	GET_POST
+	GET_POST,
+	ADD_COMMENT,
+	REMOVE_COMMENT
 } from '../actions/types';
 
 const initialState = {
