@@ -1,0 +1,6 @@
+{
+	"mongoURI" : "mongodb+srv://seabassgonzalez:gunitsa5@clusterduck-pp2lr.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "mySecretToken",
+	"githubClientId": "68a965e95495be6fc356",
+	"githubSecret": "a48136acacdb45bfe3cc7dca185d96bb5090610b"
+}
