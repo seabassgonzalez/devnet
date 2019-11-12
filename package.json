@@ -1,6 +1,9 @@
 {
   "name": "fullstack_mern",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.9.0"
+  },
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
