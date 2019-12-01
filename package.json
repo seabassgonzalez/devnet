@@ -1,29 +1,42 @@
 {
-  "name": "devconnector",
+  "name": "fullstack_mern",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.9.0"
+  },
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Brad Traversy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seabassgonzalez/fullStack_MERN.git"
+  },
+  "author": "Sebastian Gonzalez",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seabassgonzalez/fullStack_MERN/issues"
+  },
+  "homepage": "https://github.com/seabassgonzalez/fullStack_MERN#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.1.0",
-    "express": "^4.16.4",
-    "express-validator": "^5.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.0",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.5",
-    "request": "^2.88.0"
+    "mongoose": "^5.6.2",
+    "request": "^2.88.0",
+    "react-scripts": "1.0.16"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.11"
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
   }
 }
